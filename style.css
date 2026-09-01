@@ -1,18 +1,37 @@
+:root {
+    --cor-primaria: #183c63;
+    --cor-secundária: #3a638e;
+    --cor-fundo: #ffffff;
+    --cor-texto: #151428;
+    --cor-contraste: #f3eef7;
+    --cor-botao: #f9f9f9;
+}
+
+.tema-escuro {
+    --cor-primaria: #a6cefe;
+    --cor-secundária: #98caff;
+    --cor-fundo: #0f172a;
+    --cor-texto: #ffffff;
+    --cor-contraste: #1e293d;
+    --cor-botao: #151428;
+}
+
+
 body {
     max-width: 100vw;
 }
 
 header {
-    background-color: #183c63;
-    color: #ffffff;
+    background-color:var(--cor-primaria);
+    color: var(--cor-contraste);
     text-align: center;
     margin: 0 auto;
     padding: 16px;
 }
 
 main {
-    background-color: #ffffff;
-    color: #183c63;
+    background-color:var(--cor-fundo);
+    color:var(--cor-primaria);
     margin: 0 auto;
     padding: 16px;
 
@@ -23,7 +42,7 @@ main {
 article {
     display: flex;
 
-    border: 1px solid #183c63;
+    border: 1px solid var(--cor-primaria);
 
     margin: 16px;
     gap: 16px;
